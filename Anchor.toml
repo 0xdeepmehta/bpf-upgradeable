@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.devnet]
+bpf_upgradeable = "DED2wtm71F5mnHPWUL3K2kM3H5EL461qC44ZBhcBXj5d"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
